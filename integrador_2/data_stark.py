@@ -55,7 +55,7 @@ lista_personajes =\
     "altura": "178.65000000000001",
     "peso": "54.960000000000001",
     "genero": "F",
-    "color_ojos": "Yellow (without irises)",
+    "color_ojos": "Yellow",
     "color_pelo": "Red / Orange",
     "fuerza": "15",
     "inteligencia": "good"

@@ -1,7 +1,5 @@
-from data_stark import lista_personajes
-
 #0
-def star_normalizar_datos():
+def star_normalizar_datos(lista:list):
     """
     Brief:
     Parametros:
@@ -9,7 +7,7 @@ def star_normalizar_datos():
         2:
     Returns:
     """
-    for personaje in lista_personajes:
+    for personaje in lista:
         flag = False
         if personaje["fuerza"] != int:
             personaje["fuerza"] = int(personaje["fuerza"])
@@ -112,14 +110,20 @@ def obtener_minimo(lista:list,key:str):
     return respuesta
 
 #3.3
-# def obtener_dato_cantidad(lista:list,valor:int,key:str):
-    # """
-    # Brief:
-    # Parametros:
-    #     1: 
-    #     2:
-    # Returns:
-    # """
+def obtener_dato_cantidad(lista:list,valor:int,key:str):
+    """
+    Brief:
+    Parametros:
+       1: 
+       2:
+    Returns:
+    """
+    lista_dato = []
+    for personaje in lista:
+         if personaje[key] == valor:
+              lista_dato.append(personaje['nombre'])
+    return lista_dato
+              
 
 #3.4
 def stark_imprimir_heroes(lista:list):
@@ -130,7 +134,7 @@ def stark_imprimir_heroes(lista:list):
         2:
     Returns:
     """
-    for personaje in lista_personajes:
+    for personaje in lista:
                 nombre = personaje['nombre']
                 identidad = personaje['identidad']
                 empresa = personaje['empresa']
@@ -239,51 +243,76 @@ def obtener_superheroes_por_genero(lista:list,genero:str):
     lista_genero = []
     for personaje in lista:
           if personaje["genero"] == genero:
-               lista_genero.append(personaje["nombre"])
+               lista_genero.append(personaje)
     return lista_genero
-    
-
+##
+def lista_tipos(key:str):
+    if key == "ojos":
+        tipos = ["Blue","Green","Brown","Yellow","Hazel","Silver","Red"]
+    elif key == "pelo":
+        tipos = ["black","Auburn","White","Brown","No Hair","Blond","Green","","Red",]
+    elif key == "inteligencia":
+        tipos = ["average","high","good",""]
+    return tipos
 
 #6
 def stark_marvel_app(lista:list):
-    apagar = True
     while True:
-        primer_numero = input("1. Normalizar datos")
+        print("1. Normalizar datos")
+        primer_numero = input("Elija una opcion:")
         if validar_entero(primer_numero) == True:
             match(primer_numero):
                 case "1":
-                    while True:
-                        star_normalizar_datos()
-                        numero = stark_menu_principal()
-                        if validar_entero(numero) == True:
-                            match(numero):
-                                case "2":
-                                    print(obtener_superheroes_por_genero(lista,"NB"))
-                                case "3":
-                                    print()
-                                case "4":
-                                    pass
-                                case "5":
-                                    pass
-                                case "6":
-                                    pass
-                                case "7":
-                                    pass
-                                case "8":
-                                    sumar_datos_heroe(lista,)
-                                case "9":
-                                    pass
-                                case "10":
-                                    pass
-                                case "11":
-                                    pass
-                                case "12":
-                                    break 
-                                case _:
-                                    print("elija una opcion valida")
-                                    print(" ")
+                    break
                 case _:
                         print("elija una opcion valida")
                         print(" ")
-
-stark_marvel_app(lista_personajes)
+                        continue
+    while True:
+        star_normalizar_datos(lista)
+        numero = stark_menu_principal()
+        if validar_entero(numero) == True:
+            match(numero):
+                case "2":
+                    for personaje in obtener_superheroes_por_genero(lista,"NB"):
+                        print(personaje['nombre'])
+                case "3":
+                    lista_genero = obtener_superheroes_por_genero(lista,"F")
+                    print(obtener_dato_cantidad(lista_genero,obtener_maximo(lista_genero,"altura"),"altura"))
+                case "4":
+                    lista_genero = obtener_superheroes_por_genero(lista,"M")
+                    print(obtener_dato_cantidad(lista_genero,obtener_maximo(lista_genero,"altura"),"altura"))
+                case "5":
+                    lista_genero = obtener_superheroes_por_genero(lista,"M")
+                    print(obtener_dato_cantidad(lista_genero,obtener_minimo(lista_genero,"fuerza"),"fuerza"))
+                case "6":
+                    lista_genero = obtener_superheroes_por_genero(lista,"NB")
+                    print(obtener_dato_cantidad(lista_genero,obtener_minimo(lista_genero,"fuerza"),"fuerza"))
+                case "7":
+                    lista_genero = obtener_superheroes_por_genero(lista,"NB")
+                    print(mostrar_promedio_dato(lista_genero,"fuerza"))
+                case "8":
+                    for color in lista_tipos("ojos"):
+                        lista_color = obtener_dato_cantidad(lista,color,"color_ojos")
+                        mensaje = f"{color}: {len(lista_color)}"
+                        print(mensaje)
+                case "9":
+                    for color in lista_tipos("pelo"):
+                        lista_color = obtener_dato_cantidad(lista,color,"color_pelo")
+                        mensaje = f"{color}: {len(lista_color)}"
+                        print(mensaje)
+                case "10":
+                    for color in lista_tipos("ojos"):
+                        lista_color = obtener_dato_cantidad(lista,color,"color_ojos")
+                        mensaje = f"{color}: {lista_color}"
+                        print (mensaje)
+                case "11":
+                    for inteligencia in lista_tipos("inteligencia"):
+                        lista_inteligencia = obtener_dato_cantidad(lista,inteligencia,"inteligencia")
+                        mensaje = f"{inteligencia}: {lista_inteligencia}"
+                        print (mensaje)
+                case "12":
+                    break 
+                case _:
+                    print("elija una opcion valida")
+                    print(" ")
