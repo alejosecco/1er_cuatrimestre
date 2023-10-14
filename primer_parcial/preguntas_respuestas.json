@@ -1,0 +1,494 @@
+{
+    "tematicas": [
+        {
+            "tema": "Arte",
+            "preguntas": [
+                {
+                    "Pregunta": "¿Quién pintó la Mona Lisa?",
+                    "Respuesta_1": "Leonardo da Vinci",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Pablo Picasso",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Vincent van Gogh",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Claude Monet",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Salvador Dalí",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es la novela más vendida de todos los tiempos?",
+                    "Respuesta_1": "Don Quijote",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Cien años de soledad",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Harry Potter y la piedra filosofal",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "El Señor de los Anillos",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "1984",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Quién escribió la obra de teatro Romeo y Julieta?",
+                    "Respuesta_1": "William Shakespeare",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Antón Chéjov",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Oscar Wilde",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Federico García Lorca",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "George Bernard Shaw",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el instrumento musical más antiguo del mundo?",
+                    "Respuesta_1": "Flauta",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Lira",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Tambor",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Arpa",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Laúd",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Quién es el autor de la escultura 'El Pensador'?",
+                    "Respuesta_1": "Auguste Rodin",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Michelangelo",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Pablo Picasso",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Leonardo da Vinci",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Donatello",
+                    "Cantidad_R5": 30
+                }
+            ]
+        },
+        {
+            "tema": "Deportes",
+            "preguntas": [
+                {
+                    "Pregunta": "¿Cuál es el deporte más popular del mundo?",
+                    "Respuesta_1": "Fútbol (Soccer)",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Cricket",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Baloncesto",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Tenis",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Golf",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Quién es el máximo goleador en la historia de la Copa del Mundo de la FIFA?",
+                    "Respuesta_1": "Miroslav Klose",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Ronaldo Nazário",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Lionel Messi",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Pelé",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Diego Maradona",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿En qué deporte se utiliza la pista de hielo?",
+                    "Respuesta_1": "Patinaje artístico",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Hockey sobre hielo",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Patinaje de velocidad",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Curling",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Bobsleigh",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿En qué deporte se utiliza un volante y una raqueta?",
+                    "Respuesta_1": "Bádminton",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Tenis",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Squash",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Ping Pong",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Golf",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuántos jugadores hay en un equipo de baloncesto en la cancha al mismo tiempo?",
+                    "Respuesta_1": "5",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "6",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "7",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "4",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "8",
+                    "Cantidad_R5": 30
+                }
+            ]
+        },
+        {
+            "tema": "Cine",
+            "preguntas": [
+                {
+                    "Pregunta": "¿Cuál es la película más taquillera de todos los tiempos?",
+                    "Respuesta_1": "Avengers: Endgame",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Avatar",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Titanic",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Star Wars: El despertar de la fuerza",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Avengers: Infinity War",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Quién es el director de la trilogía 'El Señor de los Anillos'?",
+                    "Respuesta_1": "Peter Jackson",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Christopher Nolan",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Steven Spielberg",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "James Cameron",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Quentin Tarantino",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál fue la primera película animada de Disney?",
+                    "Respuesta_1": "Blanca Nieves y los siete enanitos",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "La Cenicienta",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Bambi",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Peter Pan",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Dumbo",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el actor que interpreta a Iron Man en el Universo Cinematográfico de Marvel?",
+                    "Respuesta_1": "Robert Downey Jr.",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Chris Evans",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Chris Hemsworth",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Mark Ruffalo",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Scarlett Johansson",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es la película ganadora del Óscar a la Mejor Película en 2021?",
+                    "Respuesta_1": "Nomadland",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "The Trial of the Chicago 7",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Minari",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Promising Young Woman",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Sound of Metal",
+                    "Cantidad_R5": 30
+                }
+            ]
+        },
+        {
+            "tema": "Tecnología",
+            "preguntas": [
+                {
+                    "Pregunta": "¿En qué año se fundó Apple Inc.?",
+                    "Respuesta_1": "1976",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "1980",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "1984",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "1979",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "1982",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el sistema operativo de código abierto desarrollado por Google?",
+                    "Respuesta_1": "Android",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "iOS",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Windows",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Linux",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "macOS",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Qué significa 'www' en una dirección web?",
+                    "Respuesta_1": "World Wide Web",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Web World Wide",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "World Web Wide",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Wide World Web",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Wide Web World",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es la compañía líder en redes sociales a nivel mundial?",
+                    "Respuesta_1": "Facebook",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Instagram",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Twitter",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "LinkedIn",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Snapchat",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Qué significa 'PDF' en informática?",
+                    "Respuesta_1": "Portable Document Format",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Personal Document File",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Printable Document Format",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Public Document Form",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Private Data File",
+                    "Cantidad_R5": 30
+                }
+            ]
+        },
+        {
+            "tema": "Ciencia",
+            "preguntas": [
+                {
+                    "Pregunta": "¿Cuál es el elemento más abundante en la Tierra?",
+                    "Respuesta_1": "Hierro",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Oxígeno",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Silicio",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Aluminio",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Carbono",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+                    "Respuesta_1": "Júpiter",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Saturno",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Urano",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Neptuno",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Marte",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
+                    "Respuesta_1": "Fémur",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Húmero",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Tibia",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Radio",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Fíbula",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el elemento más ligero de la tabla periódica?",
+                    "Respuesta_1": "Hidrógeno",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Helio",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Oxígeno",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Carbono",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Nitrógeno",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Qué gas necesitan las plantas para realizar la fotosíntesis?",
+                    "Respuesta_1": "Dióxido de carbono",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Oxígeno",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Nitrógeno",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Helio",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Argón",
+                    "Cantidad_R5": 30
+                }
+            ]
+        },
+        {
+            "tema": "Geografía",
+            "preguntas": [
+                {
+                    "Pregunta": "¿Cuál es el río más largo del mundo?",
+                    "Respuesta_1": "Amazonas",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Nilo",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Misisipi",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Yangtsé",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Ganges",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es la montaña más alta del mundo?",
+                    "Respuesta_1": "Monte Everest",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Monte Kilimanjaro",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "K2",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Monte McKinley (Denali)",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Monte Aconcagua",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el país más grande del mundo en términos de territorio?",
+                    "Respuesta_1": "Rusia",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Canadá",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Estados Unidos",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "China",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Brasil",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el océano más grande del mundo?",
+                    "Respuesta_1": "Pacífico",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Atlántico",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Índico",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Antártico",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Ártico",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál es el desierto más grande del mundo?",
+                    "Respuesta_1": "Sáhara",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Desierto de Arabia",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Desierto de Gobi",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Desierto de Kalahari",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Desierto de Atacama",
+                    "Cantidad_R5": 30
+                }
+            ]
+        },
+        {
+            "tema": "Historia",
+            "preguntas": [
+                {
+                    "Pregunta": "¿En qué año comenzó la Primera Guerra Mundial?",
+                    "Respuesta_1": "1914",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "1917",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "1919",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "1916",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "1915",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+                    "Respuesta_1": "George Washington",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Thomas Jefferson",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "John Adams",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "James Madison",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Abraham Lincoln",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿En qué año se firmó la Declaración de Derechos Humanos de las Naciones Unidas?",
+                    "Respuesta_1": "1948",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "1951",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "1945",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "1950",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "1947",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Cuál fue el resultado de la Revolución Rusa de 1917?",
+                    "Respuesta_1": "Establecimiento del gobierno comunista",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Restauración de la monarquía",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Instauración de una democracia liberal",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Colonización extranjera",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "División del país en varios estados independientes",
+                    "Cantidad_R5": 30
+                },
+                {
+                    "Pregunta": "¿Quién fue el líder político y espiritual de la India durante el movimiento de independencia?",
+                    "Respuesta_1": "Mahatma Gandhi",
+                    "Cantidad_R1": 20,
+                    "Respuesta_2": "Jawaharlal Nehru",
+                    "Cantidad_R2": 25,
+                    "Respuesta_3": "Subhas Chandra Bose",
+                    "Cantidad_R3": 10,
+                    "Respuesta_4": "Muhammad Ali Jinnah",
+                    "Cantidad_R4": 15,
+                    "Respuesta_5": "Bhagat Singh",
+                    "Cantidad_R5": 30
+                }
+            ]
+        }
+    ]
+}

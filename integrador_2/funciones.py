@@ -1,11 +1,10 @@
 #0
 def star_normalizar_datos(lista:list):
     """
-    Brief:
+    Brief: normaliza los datos numericos a int o flaot segun corresponda
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: lista de personajes
+    Returns: retorna true en caso de normalizar 1 o mas datos y false en caso de que ya esten normalizador
     """
     for personaje in lista:
         flag = False
@@ -23,11 +22,11 @@ def star_normalizar_datos(lista:list):
 #1.1
 def obtener_dato(diccionario:dict,dato:str):
     """
-    Brief:
+    Brief: busca un dato de un personaje
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: diccionario de un personaje
+        2: dato que se esta buscando
+    Returns: retorna el dato buscado o un false en caso de no existir
     """
     if diccionario and dato in diccionario:
         respuesta = diccionario[dato]
@@ -38,12 +37,11 @@ def obtener_dato(diccionario:dict,dato:str):
 #1.2
 def obtener_nombre(diccionario:dict):
     """
-    Brief:
+    Brief: obtiene el nombre del  personaje
     Parametros:
-        1: 
-        2:
-    Returns:
-    """
+        1: diccionario del personaje
+    Returns: retorna el nombre del personaje o un false en caso de no tener
+    """ 
     nombre = obtener_dato(diccionario,"nombre")
     if nombre == False:
         respuesta = False
@@ -54,11 +52,11 @@ def obtener_nombre(diccionario:dict):
 #2
 def obtener_nombre_y_dato(diccionario:dict,dato:str):
     """
-    Brief:
+    Brief: obtiene el nombre y el dato buscado de un personaje
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: diccionario del personaje
+        2: dato que se busca
+    Returns: retorna un str con el nombre y el dato pedido o un false en caso de no existir el dato o el personaje
     """
     nombre = obtener_nombre(diccionario)
     dato_pedido = obtener_dato(diccionario, dato)
@@ -71,11 +69,11 @@ def obtener_nombre_y_dato(diccionario:dict,dato:str):
 # #3.1
 def obtener_maximo(lista:list,key:str):
     """
-    Brief:
+    Brief: obtiene el maximo de el dato pedido
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: lista de personajes
+        2: el dato que se busca el maximo
+    Returns: retorna el maximo o si la lista esta vacia un false
     """
     flag = False
     respuesta = 0
@@ -91,11 +89,11 @@ def obtener_maximo(lista:list,key:str):
 #3.2
 def obtener_minimo(lista:list,key:str):
     """
-    Brief:
+    Brief: obtiene el minimo de el dato pedido
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: lista de personajes
+        2: el dato que se busca el minimo
+    Returns: retorna el minimo o si la lista esta vacia un false
     """
     flag = False
     respuesta = 0
@@ -116,6 +114,7 @@ def obtener_dato_cantidad(lista:list,valor:int,key:str):
     Parametros:
        1: 
        2:
+       3:
     Returns:
     """
     lista_dato = []
@@ -128,11 +127,9 @@ def obtener_dato_cantidad(lista:list,valor:int,key:str):
 #3.4
 def stark_imprimir_heroes(lista:list):
     """
-    Brief:
+    Brief: imprime la lista de personajes
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: lista de personajes
     """
     for personaje in lista:
                 nombre = personaje['nombre']
@@ -145,17 +142,18 @@ def stark_imprimir_heroes(lista:list):
                 color_pelo =  personaje['color_pelo']
                 fuerza = personaje['fuerza']
                 inteligencia = personaje['inteligencia']
-                print(f"nombre: {nombre}\nidentidad: {identidad}\nempresa: {empresa}\naltura: {altura}\npeso: {peso}\ngenero: {genero}\ncolor de ojos; {color_ojos}\ncolor de pelo: {color_pelo}\nfuerza: {fuerza}\ninteligencia: {inteligencia}")
+                print(f"nombre: {nombre}\nidentidad: {identidad}\nempresa: {empresa}\naltura: {altura}\npeso: {peso}\n"
+                      "genero: {genero}\ncolor de ojos; {color_ojos}\ncolor de pelo: {color_pelo}\nfuerza: {fuerza}\ninteligencia: {inteligencia}")
                 print(" ")
 
 #4.1
 def sumar_datos_heroe(lista:list,key:str):
     """
-    Brief:
+    Brief: acumula la cantidad total de un dato entre todos los personajes
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: lista de personajes
+        2: dato que se quiere buscar
+    Returns: retorna el total de la suma 
     """
     acumulador = 0
     for personaje in lista:
@@ -165,11 +163,11 @@ def sumar_datos_heroe(lista:list,key:str):
 #4.2
 def dividir(dividendo:float,divisor:float):
     """
-    Brief:
+    Brief: es una division
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: dividendo
+        2: divisor
+    Returns: retorna el resulta de division
     """
     resultado = False
     if divisor != 0:
@@ -179,11 +177,11 @@ def dividir(dividendo:float,divisor:float):
 #4.3
 def calcular_promedio(lista:list,dato:str):
     """
-    Brief:
+    Brief: calcula el promedio de un dato 
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: lista de personajes
+        2: dato que se busca el promedio
+    Returns: retorna el promedio del dato 
     """
     dividendo = sumar_datos_heroe(lista, dato)
     divisor = len(lista)
@@ -193,11 +191,11 @@ def calcular_promedio(lista:list,dato:str):
 #4.4
 def mostrar_promedio_dato(lista:list,dato:str):
     """
-    Brief:
+    Brief: muestra el promedio de un dato
     Parametros:
-        1: 
-        2:
-    Returns:
+        1: lista de personajes
+        2: dato que se busca el promedio
+    Returns: retorna el  promedio de un dato
     """
     if lista:
         respuesta = calcular_promedio(lista, dato)
@@ -207,6 +205,9 @@ def mostrar_promedio_dato(lista:list,dato:str):
 
 #5.1
 def imprimir_menu():
+    """
+    Brief: imprime el menu del programa
+    """
     print ("\n2. Recorrer la lista imprimiendo por consola el nombre de cada superhéroe de género NB" +
             "\n3. Recorrer la lista y determinar cuál es el superhéroe más alto de género F"+
             "\n4. Recorrer la lista y determinar cuál es el superhéroe más alto de género M" + 
@@ -222,6 +223,12 @@ def imprimir_menu():
 
 #5.2
 def validar_entero(numero:str):
+    """
+    Brief: valida que el dato que se le pasa sea un numero
+    Parametros:
+        1: numero a validar
+    Returns: retorna un true si es un numero y false si no es un numero
+    """
     if numero.isnumeric() == True and numero:
           respuesta = True
     else:
@@ -230,6 +237,10 @@ def validar_entero(numero:str):
 
 #5.3
 def stark_menu_principal():
+    """
+    Brief: imprime el menu y pide que de un numero que corresponda con las opciones
+    Returns: retorna el dato validado o un false en caso de no ser un numero
+    """
     imprimir_menu()
     usuario = input("Elija una opcion:")
     if validar_entero(usuario) == True:
@@ -240,23 +251,48 @@ def stark_menu_principal():
 
 ##
 def obtener_superheroes_por_genero(lista:list,genero:str):
+    """
+    Brief: obtiene una lista de los personajes del genero que se busque
+    Parametros:
+        1: lista de personajes
+        2: genero que se busca
+    Returns: retorna la lista de personajes de ese genero
+    """
     lista_genero = []
     for personaje in lista:
           if personaje["genero"] == genero:
                lista_genero.append(personaje)
     return lista_genero
 ##
-def lista_tipos(key:str):
+def lista_tipos(key:str,lista:list):
+    """
+    Brief: busca todos los tipos de un dato 
+    Parametros:
+        1: dato que se busca
+        2: lista de personajes
+    Returns: retorna todos los tipos de ese dato que se busca
+    """
+    lista_tipos = []
     if key == "ojos":
-        tipos = ["Blue","Green","Brown","Yellow","Hazel","Silver","Red"]
+        for personaje in lista:
+            lista_tipos.append(personaje["color_ojos"])
     elif key == "pelo":
-        tipos = ["black","Auburn","White","Brown","No Hair","Blond","Green","","Red",]
+        for personaje in lista:
+            lista_tipos.append(personaje["color_pelo"])
     elif key == "inteligencia":
-        tipos = ["average","high","good",""]
-    return tipos
+        for personaje in lista:
+            lista_tipos.append(personaje["inteligencia"])
+    lista_tipos = set(lista_tipos)
+    return lista_tipos
+
 
 #6
 def stark_marvel_app(lista:list):
+    """
+    Brief: es la funcion principal del programa la en la cual se ejecuta, muestra las opciones, realiza lo que se le pide y valida los daton ingresados 
+    Parametros:
+        1: lista de personajes
+    """
     while True:
         print("1. Normalizar datos")
         primer_numero = input("Elija una opcion:")
@@ -292,22 +328,22 @@ def stark_marvel_app(lista:list):
                     lista_genero = obtener_superheroes_por_genero(lista,"NB")
                     print(mostrar_promedio_dato(lista_genero,"fuerza"))
                 case "8":
-                    for color in lista_tipos("ojos"):
+                    for color in lista_tipos("ojos",lista):
                         lista_color = obtener_dato_cantidad(lista,color,"color_ojos")
                         mensaje = f"{color}: {len(lista_color)}"
                         print(mensaje)
                 case "9":
-                    for color in lista_tipos("pelo"):
+                    for color in lista_tipos("pelo",lista):
                         lista_color = obtener_dato_cantidad(lista,color,"color_pelo")
                         mensaje = f"{color}: {len(lista_color)}"
                         print(mensaje)
                 case "10":
-                    for color in lista_tipos("ojos"):
+                    for color in lista_tipos("ojos",lista):
                         lista_color = obtener_dato_cantidad(lista,color,"color_ojos")
                         mensaje = f"{color}: {lista_color}"
                         print (mensaje)
                 case "11":
-                    for inteligencia in lista_tipos("inteligencia"):
+                    for inteligencia in lista_tipos("inteligencia",lista):
                         lista_inteligencia = obtener_dato_cantidad(lista,inteligencia,"inteligencia")
                         mensaje = f"{inteligencia}: {lista_inteligencia}"
                         print (mensaje)
