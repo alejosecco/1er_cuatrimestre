@@ -2,10 +2,10 @@ import random
 
 def elegir_tematica(lista:list):
     """
-    Brief:
+    Brief: se encarga de elegir aleatoriamente una tematica
     Parametros:
-        1: 
-    Returns:
+        1: lista con tematicas/preguntas
+    Returns: retorna una tematica
     """
     tematicas = []
     for i in lista:
@@ -17,10 +17,11 @@ def elegir_tematica(lista:list):
 
 def elegir_pregunta(tematica:str,lista:list):
     """
-    Brief:
+    Brief: se encarga de elegir una pregunta dentro de la tematica de forma aleatoria
     Parametros:
-        1: 
-    Returns:
+        1: tematica en la que se busca
+        2: lista con tematicas/preguntas
+    Returns: una pregunta dentro de la tematica
     """
     preguntas = []
     for i in lista:
@@ -33,14 +34,17 @@ def elegir_pregunta(tematica:str,lista:list):
 
 def borrar_tematica(tematica:str,lista:list):
     """
-    Brief:
+    Brief: se encarga de borrar la tematica de la cual ya se uso una pregunta
     Parametros:
-        1: 
-    Returns:
+        1: la tematica que se va a borrar
+        2: lista con tematicas/preguntas
     """
     for i in range(0,len(lista)-1):
-        if lista[i]["tematica"] == tematica:
-            lista.pop(i)
+        try:
+            if lista[i]["tematica"] == tematica:
+                lista.pop(i)
+        except IndexError:
+            pass
     
 def normalizar_respuesta(respuesta:str):
     """
@@ -65,10 +69,11 @@ def obtener_respuesta_y_normalizar():
 
 def obtener_puntos(pregunta:dict, respuesta:str):
     """
-    Brief:
+    Brief: se encarga de comparar la respuesta del usuario con las correctas y devolver los puntos correspondientes
     Parametros:
-        1: 
-    Returns:
+        1: la pregunta que se le hizo al usuario
+        2: la respuesta dada por el usuario
+    Returns: los puntos obtenidos
     """
     if pregunta["Respuesta_1"] == respuesta:
         puntos = pregunta["Cantidad_R1"]
@@ -87,10 +92,9 @@ def obtener_puntos(pregunta:dict, respuesta:str):
 
 def mostrar_respuestas(pregunta:dict):
     """
-    Brief:
+    Brief: muestra las respuestas posibles a la pregunta 
     Parametros:
-        1: 
-    Returns:
+        1: pregunta que se le hizo al usuario
     """
     respuesta_1 = pregunta["Respuesta_1"]
     cantidad_r1 = pregunta["Cantidad_R1"]
@@ -111,24 +115,13 @@ def mostrar_respuestas(pregunta:dict):
           
     
 
-def sumar_vidas(vidas:int,puntos:int):
-    """
-    Brief:
-    Parametros:
-        1: 
-    Returns:
-    """
-    if puntos >= 50:
-        vidas +=1
-        puntos -= 50
-    return vidas, puntos
 
-def premio(puntos:int):
+def obtener_premio(puntos:int):
     """
-    Brief:
+    Brief: se encarga de calcular el premio segun los puntos obtenidos
     Parametros:
-        1: 
-    Returns:
+        1: puntos que obtuvo el usuario en el juego
+    Returns: retorna el total del premio
     """
     if puntos == 500:
         premio = 1000000
@@ -137,44 +130,59 @@ def premio(puntos:int):
     
     return premio
 
-def ronda_juego(lista:list,vidas:int,puntos:int,puntos_para_vidas:int):
+def ronda_juego(lista:list):
+    """
+    Brief: es una rondas del juego la cual esta hecha para utilizarse varias veces
+    Parametros:
+        1: lista con tematicas/preguntas
+    Returns: retorna los puntos ganados en la ronda
+    """
+    acumulador_puntos = 0
+    tematica = elegir_tematica(lista)
+    pregunta = elegir_pregunta(tematica,lista)
+    print (tematica)
+    intentos = 5
+    respuestas_ingresadas = []
+    puntos_obtenidos = 0
+    while intentos > 0 :
+        flag = True
+        print (pregunta["Pregunta"])
+        respuesta_usuario = input("ingrese la respuesta: ")#obtener_respuesta_y_normalizar()
+        puntos_obtenidos = obtener_puntos(pregunta,respuesta_usuario)
+        for rta in respuestas_ingresadas:
+            if respuesta_usuario == rta:
+                print("ya ingresaste esta respuesta")
+                flag = False
+        if puntos_obtenidos == 0:
+            print("no")
+        elif flag == True:
+            print("si")
+            respuestas_ingresadas.append(respuesta_usuario)
+            acumulador_puntos += puntos_obtenidos
+        else:
+            print("no")
+        intentos -=1
+        print(f"intentos restantes: {intentos}")
+        print(f"llevas {acumulador_puntos} de 100 puntos")
+    mostrar_respuestas(pregunta)
+    borrar_tematica(tematica,lista)
+    return acumulador_puntos
+
+
+def obtener_nombre_jugador():
     """
     Brief:
     Parametros:
         1: 
     Returns:
     """
-    tematica = elegir_tematica(lista)
-    pregunta = elegir_pregunta(tematica,lista)
-    print (tematica)
-    flag = True
-    intentos = 5
-    while flag:
-        if intentos ==0:
-            print("te quedaste sin intentos")
-            break
-        print (pregunta["Pregunta"])
-        respuesta_usuario = input("hola")#obtener_respuesta_y_normalizar()
-        puntos_obtenidos = obtener_puntos(pregunta,respuesta_usuario)
-        if puntos_obtenidos != 0:
-            print("si")
-            puntos += puntos_obtenidos
-            puntos_para_vidas += puntos_obtenidos
-        else:
-            print("no")
-        intentos -=1
-    if puntos == 0:
-        vidas -=1
-    vidas, puntos_para_vidas = sumar_vidas(vidas,puntos_para_vidas)
-    print(f"total puntos: {puntos}")
-    print(f"vidas restantes: {vidas}")
-    mostrar_respuestas(pregunta)
-    borrar_tematica(tematica,lista)
-    # print(puntos_para_vidas)
-    return vidas, puntos
 
 
-
-from preguntas_respuestas import lista_tematicas
-# for i in range(3):
-ronda_juego(lista_tematicas,3,0,0)
+def anotar_punjates_nombres():
+    """
+    Brief:
+    Parametros:
+        1: 
+    Returns:
+    """
+    
