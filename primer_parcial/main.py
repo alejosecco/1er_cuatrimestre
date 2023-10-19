@@ -49,4 +49,6 @@ print(f"el premio total es de: ${premio}")
 print("termino el juego")
 
 
-#normalizar respuestas y listas - usar json y hacer lo de resultado funal con csv, con nombre y resultado - 
+# normalizar respuestas y listas
+# usar json y hacer lo de resultado funal con csv, con nombre y resultado
+# hacen un menu donde se pueda elegir entre jugar ver la tabla de puntuaciones y salir
